@@ -1,14 +1,20 @@
-import image from "next/image";
 
 
-export default function Home() {
+
+
+
+import Image from "next/image";
+
+export default function Homepage() {
     return(
         <div className ="">
         
 
 
+
+
         {/*  ==============================  Home Page Footer  ==============================   */}
-        <footer>
+        <footer className="" >
             <a
                 className=""
                 href = ""
@@ -16,8 +22,14 @@ export default function Home() {
                 rel ="noopener noreferrer"
             
             >
-
-
+             <Image
+                  aria-hidden
+                  src="/file.svg"
+                  alt="Instagram Logo"
+                  width={16}
+                  height={16}
+             />
+             Bojo Resort
             </a>
 
         </footer>
@@ -25,3 +37,4 @@ export default function Home() {
         </div>
     );
 }
+    
