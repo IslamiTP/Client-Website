@@ -17,7 +17,7 @@ export default function LandingPage() {
 
         <div className="flex gap-1 items-center flex-col sm:flex-row">
             <Link
-              href={"/homepage"}
+              href="/kryefaqja"
               className="rounded-full border border-solid border-transparent transition-colors 
               flex items-center justify-center
                bg-white text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] 
@@ -43,7 +43,7 @@ export default function LandingPage() {
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4
             text-foreground "
-          href="/learnmore"
+          href="/kontakt"
           target="_blank"
           rel="noopener noreferrer"
         >
