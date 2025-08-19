@@ -2,7 +2,7 @@
 import FooterBar from "@/components/navigation/Footer";
 import Link from "next/link";
 
-export default function Kreyfaqja() {
+export default function Kryefaqja() {
     return(
         <div className ="">
             <a className="text-black">
