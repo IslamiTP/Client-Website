@@ -10,9 +10,12 @@ export default function LandingPageLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-      >
+      <body>
+        
+
         {children}
+        
+
       </body>
     </html>
   );

@@ -6,7 +6,7 @@ import Link  from 'next/link';
 export default function FooterBar() {
 
   return (
-    <footer className = "bg-white text-white" p-10>
+    <footer className = "bg-white text-white p-10">
       <div className="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
         
         {/* Bojo Resort Logo Placement */}
