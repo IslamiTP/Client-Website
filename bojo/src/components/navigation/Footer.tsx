@@ -1,6 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link  from 'next/link';
+import NewsletterSection from '@/components/newsletter/newsletter';
 
 
 export default function FooterBar() {
@@ -88,22 +89,9 @@ export default function FooterBar() {
         <div>
           {/* Legal info */}
           <ul>
-            <li>
-              <h3 className='text-black'
-              >
-                Newsletter
-              </h3>
-            </li>
-
-            <li>
-              {/* importing text box field */}
-              <a className='text-black'>
-                text-box 
-              </a>
-            </li>
-
-
-
+              <NewsletterSection>
+                
+              </NewsletterSection>
           </ul>
         </div>
       </div>
