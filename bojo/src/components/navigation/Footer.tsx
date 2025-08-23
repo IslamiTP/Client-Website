@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link  from 'next/link';
-// import NewsletterSection from '@/components/newsletter/newsletter';
+// import NewsletterSection from '@/components/newsletter/newsletter';  -- Not being used
 
 
 export default function FooterBar() {
@@ -91,6 +91,7 @@ export default function FooterBar() {
         <div>
           <ul>
               {/* Working Progress */}
+             
           </ul>
         </div>
       </div>
