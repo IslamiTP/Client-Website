@@ -1,36 +1,39 @@
+// Working Progress
+// Disabled the newsletter MailChimp api request
+
 "use client";
 
-import { useState } from "react";
+// import { useState } from "react";
 import { motion } from "framer-motion";
 
 export default function NewsletterSection() {
-  const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle");
-  const [message, setMessage] = useState("");
+//   const [email, setEmail] = useState("");
+//   const [status, setStatus] = useState<"idle"|"loading"|"success"|"error">("idle");
+//   const [message, setMessage] = useState("");
 
-  async function onSubmit(e: React.FormEvent) {
-    e.preventDefault();
-    setStatus("loading");
-    setMessage("");
+//   async function onSubmit(e: React.FormEvent) {
+//     e.preventDefault();
+//     setStatus("loading");
+//     setMessage("");
 
-    try {
-      const res = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
+//     try {
+//       const res = await fetch("/api/newsletter", {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ email }),
+//       });
 
-      const data = await res.json();
-      if (!res.ok) throw new Error(data?.error || "Something went wrong");
+//       const data = await res.json();
+//       if (!res.ok) throw new Error(data?.error || "Something went wrong");
 
-      setStatus("success");
-      setMessage("Check your inbox to confirm your subscription.");
-      setEmail("");
-    } catch (err: any) {
-      setStatus("error");
-      setMessage(err.message || "Unable to subscribe right now.");
-    }
-  }
+//       setStatus("success");
+//       setMessage("Check your inbox to confirm your subscription.");
+//       setEmail("");
+//     } catch (err: any) {
+//       setStatus("error");
+//       setMessage(err.message || "Unable to subscribe right now.");
+//     }
+//   }
 
   return (
     <section className="relative overflow-hidden">
@@ -57,7 +60,7 @@ export default function NewsletterSection() {
                 </h3>
             </div>
             
-          <form onSubmit={onSubmit} className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
+          {/* <form onSubmit={onSubmit} className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
             <label className="sr-only" htmlFor="email">
                 Email
             </label>
@@ -80,10 +83,10 @@ export default function NewsletterSection() {
             >
               {status === "loading" ? "Subscribing..." : "Subscribe"}
             </button>
-          </form>
+          </form> */}
 
           {/* Status / Hints */}
-          <div className="mx-auto mt-3 max-w-xl text-center text-sm">
+          {/* <div className="mx-auto mt-3 max-w-xl text-center text-sm">
             {status === "success" && (
               <p className="text-emerald-400">{message}</p>
             )}
@@ -96,7 +99,7 @@ export default function NewsletterSection() {
                 <a href="/privacy" className="underline underline-offset-4 hover:text-white">Privacy Policy</a>.
               </p>
             )}
-          </div>
+          </div> */}
         </motion.div>
       </div>
     </section>

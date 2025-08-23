@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link  from 'next/link';
-import NewsletterSection from '@/components/newsletter/newsletter';
+// import NewsletterSection from '@/components/newsletter/newsletter';
 
 
 export default function FooterBar() {
@@ -86,12 +86,11 @@ export default function FooterBar() {
           </ul>
         </div>
         
+        
+        {/* Newsletter */}
         <div>
-          {/* Legal info */}
           <ul>
-              <NewsletterSection>
-                
-              </NewsletterSection>
+              {/* Working Progress */}
           </ul>
         </div>
       </div>
@@ -119,5 +118,5 @@ export default function FooterBar() {
     
     </footer>   
   );
-
+  
 }
