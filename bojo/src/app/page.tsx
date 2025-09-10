@@ -20,7 +20,7 @@ export default function LandingPage() {
               href="/kryefaqja"
               className="rounded-full border border-solid border-transparent transition-colors 
               flex items-center justify-center
-               bg-white text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] 
+               bg-[#DCCBB3] text-background gap-2 hover:bg-[#383838] dark:bg-white dark:hover:bg-[#ccc] 
               font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-50"
               target="_blank"
               rel="noopener noreferrer"
